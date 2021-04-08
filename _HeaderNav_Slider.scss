@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;   
+    
+}
+a:hover {
+	text-decoration: underline;
+}
+.navbar{
+        z-index:1;
+        background-color: #10425b;
+        margin-bottom: 10px;
+        position: sticky;
+        top: 0;
+   
+}
+.navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color:#a8a9ac;
+    transition: .2s ease-out all;
+}
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.contenedor{
+   
+    max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+   
+    
+}
+body{
+    background-color: lightgrey;
+    font-family: sans-serif;
+  }
+  
+  .container{
+      
+    margin: auto;
+    background-color: white;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 95%;
+    height: 500px
+    
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    padding-left: 100px;
+
+   
+    
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  .menu li a:hover{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    transition: .3s;
+  }
